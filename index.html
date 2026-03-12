@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gape Ncube · Personal Profile</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gape Ncube</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero bg-light py-5">
+    <div class="container text-center">
+      <img src="https://via.placeholder.com/150/007bff/ffffff?text=GN" alt="Gape Ncube profile" class="rounded-circle mb-3 border border-3 border-primary" width="150" height="150">
+      <h1 class="display-4">Gape Ncube</h1>
+      <p class="lead">Web Developer & Java Programmer</p>
+      <p class="text-muted">Passionate about building clean, responsive websites and robust Java applications.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>I am a dedicated developer currently studying at Botswana Accountancy College. I enjoy turning complex problems into simple, elegant solutions. My core interests lie in front‑end development and back‑end logic with Java. I am always eager to learn new technologies and improve my craft.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Skills</h2>
+      <ul class="skill-list">
+        <li>HTML5 & CSS3</li>
+        <li>Java Programming</li>
+        <li>JavaScript (basic)</li>
+        <li>Bootstrap 5</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Education</h2>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Botswana Accountancy College</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Bachelor of Computer Science (Expected 2026)</h6>
+          <p class="card-text">Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Bootstrap cards) -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Personal Portfolio</h5>
+              <p class="card-text">This very website – built with HTML5, CSS3, Bootstrap 5, and custom styling.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal">Preview</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Java Library System</h5>
+              <p class="card-text">Console‑based library management system using OOP principles and file handling.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal">Preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Certifications</h2>
+      <ul class="skill-list"> <!-- reusing the same styled list -->
+        <li>FreeCodeCamp – Responsive Web Design</li>
+        <li>Oracle – Java Foundations (in progress)</li>
+        <li>LinkedIn Learning – Git Essential Training</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section with a modal trigger -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Get in Touch</h2>
+      <p class="mb-4">Feel free to reach out for collaborations or just a friendly chat.</p>
+      <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+        Contact Me
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 Gape Ncube. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+
+  <!-- Project Modal (generic for demo) -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>More details about this project would appear here. This is a placeholder modal to demonstrate Bootstrap’s modal component.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Email:</strong> gape.ncube@example.com</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/gapen cube</p>
+          <p><strong>GitHub:</strong> github.com/gapen cube</p>
+          <hr>
+          <p class="text-muted">I’ll try to respond within 24 hours.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS bundle (required for toggler, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
